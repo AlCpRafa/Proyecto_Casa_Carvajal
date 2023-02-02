@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Prueba</title>
+</head>
+
+<body class="m-0 p-0">
+    <header class="bg-gr--light">
+        <nav class="navbar navbar-expand-lg border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand row d-flex justify-content-center align-items-center text-g-dark" href="/"><img src="../assets/images/logoh.png" alt="logo" class="col-2">Casa Carvajal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse row" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-5 ms-lg-0 col-12 d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-g-dark" href="./casa.html">La Casa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-g-dark" href="./autor.html">El autor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-g-dark" href="./libro.html">Archivo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-g-dark active" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="py-5">
+        <!-- Pagina con un formulario de registro sacado de bootstrap -->
+        <!-- Titulo de la pagina -->
+        <h1 class="text-g-dark text-center px-0 mx-0">Programa tu visita</h1>
+        <!-- Seccion con el formulario y una imagen para adornar -->
+        <section class="row d-flex justify-content-between px-5 mx-0">
+            <!-- Imagen para adornar -->
+            <img src="../assets/images/int16.png" alt="" class="col-md-6 col-lg-7 object-fit-contain">
+            <!-- Formulario con inputs sacados de bootstrap -->
+            <form action="../index.html" method="POST" class="col-md-6 col-lg-5 pt-1 text-center">
+                <!-- Para los nombres y apellidos -->
+                <div class="input-group my-4">
+                    <span class="input-group-text bg-gr--dark">Nombre y Apellidos</span>
+                    <input type="text" aria-label="First name" class="form-control bg-gr">
+                    <input type="text" aria-label="Last name" class="form-control bg-gr">
+                </div>
+                <div class="input-group my-4">
+                    <!-- Campo para el email -->
+                    <div class="form-floating">
+                        <input type="email" class="form-control bg-gr" id="email" placeholder="..." name="email">
+                        <label for="email">Correo Electronico</label>
+                    </div>
+                    <!-- Campo para el dni -->
+                    <div class="form-floating">
+                        <input type="text" class="form-control bg-gr" id="dni" placeholder="..." name="dni">
+                        <label for="dni">DNI</label>
+                    </div>
+                </div>
+                <div class="input-group my-4">
+                    <div class="form-floating">
+                        <!-- Input de tipo date para la fecha de visita -->
+                        <input type="date" class="form-control bg-gr" id="reserva" placeholder="..." name="reserva">
+                        <label for="reserva">Fecha de visita</label>
+                    </div>
+                    <div class="form-floating form-control bg-gr d-flex justify-content-center align-items-center">
+                        <!-- Checkbox de bootstrap -->
+                        <div class="form-check form-switch">
+                            <input class="form-check-input custominput" type="checkbox" role="switch" id="guiada" name="guiada">
+                            <label class="form-check-label" for="guiada" name="guiada">Visita guiada</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit -->
+                <button type="submit" class="btn bg-gr--dark px-5">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="d-flex flex-wrap justify-content-center align-items-center border-top py-5 bg-gr--light">
+        <p class="col-md-4 text-muted text-center">&copy; 2022 Casa Carvajal</p>
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center me-md-auto link-dark text-decoration-none">
+          <img src="../assets/images/logoh.png" alt="" class="col-1">
+        </a>
+        <ul class="nav col-md-4 justify-content-center">
+          <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+          <li class="nav-item"><a href="./casa.html" class="nav-link px-2 text-muted">La Casa</a></li>
+          <li class="nav-item"><a href="./autor.html" class="nav-link px-2 text-muted">El autor</a></li>
+          <li class="nav-item"><a href="./libro.html" class="nav-link px-2 text-muted">Archivo</a></li>
+          <li class="nav-item"><a href="./contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+        </ul>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
