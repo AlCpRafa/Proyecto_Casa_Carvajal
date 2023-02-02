@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Casa Carvajal</title>
+</head>
+
+<body class="m-0 p-0">
+    <!-- Header con los enlaces a las diferentes paginas -->
+    <!-- Antes de lg no se muestra si no se pulsa el boton -->
+    <header class="bg-gr--light">
+        <nav class="navbar navbar-expand-lg border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand row d-flex justify-content-center align-items-center text-g-dark" href="/"><img src="./assets/images/logoh.png" alt="logo" class="col-2">Casa Carvajal</a>
+                <!-- Boton para bostrar los diferentes enlaces antes de lg -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Lista con los diferentes enlaces -->
+                <nav class="collapse navbar-collapse row" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-5 ms-lg-0 col-12 d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 active" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-g-dark" href="./pages/casa.html">La Casa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-g-dark" href="./pages/autor.html">El autor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-g-dark" href="./pages/libro.html">Archivo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-g-dark" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <main class="m-0 p-0">
+        <!-- Esta section es un carrusel de bootstrap que ha sido modificado. Los botones laterales siguen funcionando aunque se han puesto invisibles.
+        Avanza de manera automatica y se usa la caracteristica fade. Dentro contiene varios articulos -->
+        <section id="carouselExampleFade" class="carousel slide carousel-fade col-lg-10 mx-auto" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Cada uno de los articulos es una diapositiva del carrusel. Contienen una imagen y un texto que se muestra en la parte inferior
+                Cuando llega a lg, a partir de resoluciones inferiores solo se muestra el titulo de la diapositiva. -->
+                <article class="carousel-item active">
+                    <img src="./assets/images/ex1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption mb-5">
+                        <h5 class="fs-1">Casa Carvajal</h5>
+                        <p class="fs-5 d-none d-lg-block">Es la residencia creada por el artista Javier
+                            Carvajal para él y su familia, con tal animo
+                            y destreza que en 1969 fue premiada nada
+                            menos que con el Fritz Schumacher de la
+                            Universidad de Hamburgo, en ese momento
+                            uno de los grandes títulos de arquitectura
+                            dado que no estaba el Pritzker.</p>
+                    </div>
+                </article>
+                <article class="carousel-item">
+                    <img src="./assets/images/ex2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption mb-5">
+                        <h5 class="fs-3">Mimesis con el entorno</h5>
+                        <p class="fs-5 d-none d-lg-block">Después de 50 años de su construcción su
+                            estilo brutalista que se mostraba como escultura fuera de su época se mimetiza con
+                            el entorno y la naturaleza; suaviza la dureza
+                            del hormigón para ser hoy contenedor de un
+                            particular Eden. </p>
+                    </div>
+                </article>
+                <article class="carousel-item">
+                    <img src="./assets/images/ex10.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption mb-5">
+                        <h5 class="fs-3">Insipirado en la Alhambra</h5>
+                        <p class="fs-5 d-none d-lg-block">J. Carvajal se inspiró en la Alhambra a la hora de construir
+                            la casa
+                            y la casa tiene esa herencia de la tierra española. Se construye
+                            alrededor de dos patios interiores que hacen circular en forma de
+                            8 el flujo de la casa. Esto
+                            permite comunicarte con los otros en diferentes acercamientos y
+                            distancias.</p>
+                    </div>
+                </article>
+                <article class="carousel-item">
+                    <img src="./assets/images/ex7.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption mb-5">
+                        <h5 class="fs-3">El terreno</h5>
+                        <p class="fs-5 d-none d-lg-block">Por otro lado la vivienda de una sola planta; está construida
+                            en
+                            pendiente sobre tres plataformas que se pegan a la superficie del
+                            terreno. La casa construida para y con el terreno se va adaptando. Hay pequeños desniveles
+                            de 2 o 3 escalones que a la vez van
+                            delimitando los espacios. </p>
+                    </div>
+                </article>
+                <article class="carousel-item">
+                    <img src="./assets/images/ex5.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption mb-5">
+                        <h5 class="fs-3">El fluir de la casa</h5>
+                        <p class="fs-5 d-none d-lg-block">El jardin y el fluir del agua en sus fuentes, asi como algunas
+                            invitaciones en la casa a esa doble posibilidad de movimiento en cada
+                            estancia nos lleva a las sensaciones de la Alhambra por momentos.</p>
+                    </div>
+                </article>
+            </div>
+            <!-- Botnes que se encuentran ocultos -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <!-- Grouplist de bootstrap que ha sido modificada y muestra diferentes datos acerca de la casa -->
+        <section class="p-5 mx-auto">
+            <h3 class="text-success-emphasis mb-3">Datos:</h3>
+            <ul class="list-group list-group-flush fs-6 rounded-end-5 border border-success">
+                <li class="list-group-item list-group-item-action list-group-item-light text-success-emphasis">
+                    Arquitecto: Javier Carvajal Ferrer</li>
+                <li class="list-group-item list-group-item-action list-group-item-light text-success-emphasis">Cliente:
+                    Javier Carvajal Ferrer</li>
+                <li class="list-group-item list-group-item-action list-group-item-light text-success-emphasis">
+                    Superficie total: 4.800 m²</li>
+                <li class="list-group-item list-group-item-action list-group-item-light text-success-emphasis">
+                    Superficie construida: 1.000 m²</li>
+                <li class="list-group-item list-group-item-action list-group-item-light text-success-emphasis">Ano de
+                    construccion: 1996</li>
+                <li class="list-group-item list-group-item-action list-group-item-light text-success-emphasis">
+                    Localizacion: Calle Talavera 7 – Pozuelo de Alarcón, Madrid, España.</li>
+            </ul>
+        </section>
+        <!-- Seccion con botones popover que muestran una etiqueta cada vez que son pulsados -->
+        <section class="row p-0 m-0">
+            <h3 class="text-success-emphasis mb-3 px-5">Acerca de la casa:</h3>
+            <div class="row d-flex justify-content-around mb-3">
+                <!-- Tienen diferentes breakpoints y el texto que se se muestra cuando son pulsados aparece en la etiqueta data-bs-content -->
+                <button type="button" class="btn btn-lg bg-gr--dark col-sm-8 col-lg-3 col-md-5 mb-3 py-4"
+                    data-bs-container="body" data-bs-custom-class="custom-popover" data-bs-toggle="popover"
+                    data-bs-placement="top" data-bs-content="4.800 m2">Parcela</button>
+                <button type="button" class="btn btn-lg bg-gr--dark col-sm-8 col-lg-3 col-md-5 mb-3 py-4"
+                    data-bs-container="body" data-bs-custom-class="custom-popover" data-bs-toggle="popover"
+                    data-bs-placement="top" data-bs-content="800 m2">Construcciones interiores</button>
+                <button type="button" class="btn btn-lg bg-gr--dark col-sm-8 col-lg-3 col-md-5 mb-3 py-4"
+                    data-bs-container="body" data-bs-custom-class="custom-popover" data-bs-toggle="popover"
+                    data-bs-placement="top" data-bs-content="200 m2 - 2 terrazas">Construcciones exteriores</button>
+            </div>
+            <div class="row d-flex justify-content-around mb-3">
+                <button type="button" class="btn btn-lg bg-gr--dark col-sm-8 col-lg-3 col-md-5 mb-3 py-4"
+                    data-bs-container="body" data-bs-custom-class="custom-popover" data-bs-toggle="popover"
+                    data-bs-placement="top" data-bs-content="Con chimenea y 2 comedores">Salon amplio</button>
+                <button type="button" class="btn btn-lg bg-gr--dark col-sm-8 col-lg-3 col-md-5 mb-3 py-4"
+                    data-bs-container="body" data-bs-custom-class="custom-popover" data-bs-toggle="popover"
+                    data-bs-placement="top" data-bs-content="Versatil y flexible para multiples usos">Planta
+                    modular</button>
+                <button type="button" class="btn btn-lg bg-gr--dark col-sm-8 col-lg-3 col-md-5 mb-3 py-4"
+                    data-bs-container="body" data-bs-custom-class="custom-popover" data-bs-toggle="popover"
+                    data-bs-placement="top" data-bs-content="50 m2 y 62 m2">2 cuartos de estar</button>
+            </div>
+            <div class="row d-flex justify-content-around mb-3">
+                <button type="button" class="btn btn-lg bg-gr--dark col-sm-8 col-lg-3 col-md-5 mb-3 py-4"
+                    data-bs-container="body" data-bs-custom-class="custom-popover" data-bs-toggle="popover"
+                    data-bs-placement="top" data-bs-content="Y 1 cuarto individual">3 cuartos en suite</button>
+                <button type="button" class="btn btn-lg bg-gr--dark col-sm-8 col-lg-3 col-md-5 mb-3 py-4"
+                    data-bs-container="body" data-bs-custom-class="custom-popover" data-bs-toggle="popover"
+                    data-bs-placement="top" data-bs-content="Uno de ellos con sala de estar, 
+                    dormitorio y baño en suite)">2 cuartos de servicio</button>
+                <button type="button"
+                    class="btn btn-lg bg-gr--dark col-sm-8 col-lg-3 col-md-5 mb-3 py-4">Piscina</button>
+            </div>
+        </section>
+    </main>
+    <!-- Footer impotado de bootstrap al que se le han hecho diversas modificaciones -->
+    <footer class="d-flex flex-wrap justify-content-center align-items-center border-top py-5 bg-gr--light">
+        <!-- texto -->
+        <p class="col-md-4 text-muted text-center">&copy; 2022 Casa Carvajal</p>
+        <!-- Logo que lleva al index -->
+        <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center me-md-auto link-dark text-decoration-none">
+            <img src="./assets/images/logoh.png" alt="" class="col-1">
+        </a>
+        <!-- Lista con los diferentes enlaces -->
+        <ul class="nav col-md-4 justify-content-center">
+            <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+            <li class="nav-item"><a href="./pages/casa.html" class="nav-link px-2 text-muted">La Casa</a></li>
+            <li class="nav-item"><a href="./pages/autor.html" class="nav-link px-2 text-muted">El autor</a></li>
+            <li class="nav-item"><a href="./pages/libro.html" class="nav-link px-2 text-muted">Archivo</a></li>
+            <li class="nav-item"><a href="./pages/contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+        </ul>
+    </footer>
+    <!-- Script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/autor.js"></script>
+</body>
+
+</html>
