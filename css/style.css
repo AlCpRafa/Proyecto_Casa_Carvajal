@@ -1,0 +1,59 @@
+/*Index*/
+/*Se cambian ciertos parametros de las ventanas que aparecen al pulsar los botones*/
+.custom-popover {
+    --bs-popover-max-width: 200px;
+    --bs-popover-border-color: var(--bs-success);
+    --bs-popover-bg: var(--bs-gray-300);
+}
+
+/*Archivo*/
+.archivo-card{
+    min-height: 220px;
+}
+
+/*Contacto*/
+.custominput{
+    border-color: green;
+}
+.custominput:active{
+    background-color: green;
+}
+.custominput:checked{
+    background-color: green;
+}
+/*General*/
+.txt{
+    text-align: justify;
+}
+.border-box{
+    box-sizing: border-box;
+}
+/*Colores de fondo y de texto*/
+.bg-gr{
+    background-color: rgba(125, 187, 125, 0.664);
+    color: aliceblue;
+}
+.bg-gr--light{
+    background-color: rgba(149, 211, 149, 0.192);
+}
+.bg-gr:focus{
+    color: antiquewhite;
+    background-color: rgba(1, 145, 1, 0.664);
+}
+.bg-gr--dark{
+    background-color: rgb(96, 143, 96);
+    color: antiquewhite;
+}
+.bg-gr--dark:hover{
+    background-color: rgb(65, 85, 65);
+    color: rgb(130, 218, 43);
+}
+.bg-gr--dark:focus{
+    background-color: rgb(96, 143, 96);
+    color: antiquewhite;
+}
+.text-g-dark{
+    color: rgb(96, 143, 96);
+}
+
+
